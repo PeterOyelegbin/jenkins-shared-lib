@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 def call() {
-    echo "building the dotnet application..."
+    echo "building the dotnet application for branch: $BRANCH_NAME"
     sh "ls ."
     sh "docker --version"
     sh "dotnet --version"
